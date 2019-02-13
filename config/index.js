@@ -52,6 +52,11 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/frontend/dist',
 
+
+    errorOverlay: true,
+    notifyOnErrors: true,
+    poll: true, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-    
+
     /**
      * Source Maps
      */
