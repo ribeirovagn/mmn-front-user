@@ -39,7 +39,11 @@ import './assets/bower_components/slick-carousel/slick/slick.css'
 Vue.config.productionTip = false
 Vue.http.options.root = process.env.API_ENDPOINT
 
-
+if (process.env.NODE_ENV === 'production') {
+  Vue.config.devtools = false
+  Vue.config.debug = false
+  Vue.config.silent = true
+}
 
 router.afterEach((to, from) => {
   store.dispatch('isLoaded')
