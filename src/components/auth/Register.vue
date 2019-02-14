@@ -147,6 +147,7 @@ export default {
         this.formData.indicator = response.data.user
       }, error => {
         this.formData.indicator = null
+        this.formData.indicatorName = null
         this.$swal({
           title: 'Error',
           type: 'error',
