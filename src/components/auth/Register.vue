@@ -146,6 +146,7 @@ export default {
       this.$http.get('genealogy/verify/' + this.formData.indicatorName).then(response => {
         this.formData.indicator = response.data.user
       }, error => {
+        this.formData.indicator = null
         this.$swal({
           title: 'Error',
           type: 'error',
