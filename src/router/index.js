@@ -35,6 +35,15 @@ export default new Router({
       }
     },
     {
+      path: '/register/:indicator',
+      name: 'Register',
+      component: Register,
+      props: true,
+      meta: {
+        forVisitors: true
+      }
+    },
+    {
       path: '/',
       name: 'Dashboard',
       component: Dashboard,

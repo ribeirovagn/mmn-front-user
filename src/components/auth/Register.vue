@@ -89,6 +89,7 @@
 <script>
 
 export default {
+  props: ['indicator'],
   data () {
     return {
       formData: {
@@ -104,7 +105,11 @@ export default {
     }
   },
   created () {
-    console.log(this.formData);
+    console.log("INDICATOR", this.indicator);
+    if(typeof this.indicator !== "undefined"){
+      this.formData.indicatorName = this.indicator
+      this.getindicator()
+    }
   },
 
   methods: {
