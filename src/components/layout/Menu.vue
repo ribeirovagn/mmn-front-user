@@ -2,7 +2,7 @@
   <div class="menu-w color-scheme-dark color-style-bright menu-position-side menu-side-left menu-layout-compact sub-menu-style-over sub-menu-color-bright selected-menu-color-light menu-activated-on-hover menu-has-selected-link">
     <div class="logo-w">
       <router-link :to="{ name: 'Dashboard'}">
-        <div class="logo-element"></div>
+        <img src="https://s3.amazonaws.com/navi-public/api/logo.png">
         <div class="logo-label">MMN 3.0</div>
       </router-link>
     </div>

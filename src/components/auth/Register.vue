@@ -2,7 +2,7 @@
   <div class="all-wrapper menu-side with-pattern">
     <div class="auth-box-w wider">
       <div class="logo-w">
-        <a href="index.html"><img alt="" src="img/logo-big.png"></a>
+        <img src="https://s3.amazonaws.com/navi-public/api/logo.png" width="120">
       </div>
       <h4 class="auth-header">Create new account</h4>
       <form v-on:submit.prevent="sendForm">
